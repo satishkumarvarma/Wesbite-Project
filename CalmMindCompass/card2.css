@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+/* body{
+    background-color: #eee;
+    font-family: "poppins",sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+body {
+    text-align: center;
+    font-family: "poppins",sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient( 
+       to right,
+       #6f7280,
+       #2a2c3c,
+       #181827,
+       #833ab4,
+       #fd1d1d,
+       #fcb045
+       
+    );
+    background-size: 400% 400%;
+    animation: body 10s infinite ease-in-out;
+  }
+  @keyframes body{
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+
+.card{
+     background-color:white;
+}
+.grid{
+    display: grid;
+    width: 114em;
+    grid-gap:6rem;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    align-items: start;
+}
+.grid-item{
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.grid-items{
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0,0,0,0.5);
+}
+
+.card-img{
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 3rem;
+}
+.card-header{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+}
+
+.card-text{
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 2.5rem;
+}
+
+.card-btn{
+    display: block;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #3363ff;
+    background-color: #d8e0fd;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.card-button span{
+    margin-left: 1rem;
+    transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active{
+    background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active{
+    margin-left: 1.5rem;
+}
+
+.card:hover{
+    
+    transform: scale(1.03);
+    transition: all 1s ease;
+    
+}
+
+@media only screen and(max-width:60rem){
+    body{
+        padding:3rem;
+    }
+
+    .grid{
+        grid-gap:3rem;
+
+    }
+}
