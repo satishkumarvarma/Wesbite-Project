@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish and Responsive Yoga Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            border-radius: 50%;
+            max-width: 100px;
+            height: auto;
+        }
+
+        .intro {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            flex: 0 0 calc(25% - 20px);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            margin: 10px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .card .container {
+            padding: 10px;
+        }
+
+        .card h4 {
+            margin: 0;
+        }
+
+        #logout{
+            border: 2px solid black;
+            border-radius: 10px;
+            display: inline-block;
+            color: black;
+            padding: 15px;
+            margin-left: 850px;
+            cursor: pointer;
+        }
+
+        #logout:hover{
+            background-color: rgb(154, 168, 168);
+            font-size: larger;
+        }
+
+        @media only screen and (max-width: 800px) {
+            .header h1 {
+                font-size: 24px;
+            }
+            /* .video-container{
+                width:250px;
+            } */
+            .intro p {
+                font-size: 14px;
+            }
+
+            .card {
+                flex: 0 0 calc(33.33% - 20px);
+            }
+             #logout{
+                margin-left:600px;
+            } 
+        }
+        /* @media only screen and (max-width: 800px) {
+            #logout{
+                margin-left:500px;
+            } 
+        }
+        @media only screen and(max-width:414px){
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .intro p {
+                font-size: 12px;
+            }
+
+            .card {
+                flex: 0 0 calc(33.33% - 20px);
+            }
+            #logout{
+                margin-left: 260px;
+            }
+        } */
+
+        @media only screen and (max-width: 378px) {
+    #logout{
+                margin-left: 100px;
+            }
+}
+        @media only screen and (min-width: 800px) {
+    #logout{
+                margin-left: 770px;
+            }
+}
+
+         /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #logout{
+                margin-left: 260px;
+            }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #logout{
+                margin-left: 490px;
+            }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #logout{
+                margin-left: 650px;
+            }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #logout{
+                margin-left: 870px;
+            }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #logout{
+                margin-left: 1000px;
+            }
+}
+
+        /* Responsive layout for smaller screens */
+        /* @media only screen and (max-width: 800px) {
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .intro p {
+                font-size: 14px;
+            }
+
+            .card {
+                flex: 0 0 calc(33.33% - 20px);
+            }
+        } */
+
+        /* Responsive layout for even smaller screens */
+        @media only screen and (max-width: 600px) {
+            .card {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- <img src="https://media.istockphoto.com/id/1355037936/photo/shot-of-a-young-businessman-looking-stressed-while-working-in-a-modern-office.jpg?s=1024x1024&w=is&k=20&c=keYWImA78TOzpWKgsjdtrqe5Y-XndPPrZAPjMuWbuj8=" alt="alternatetext"> -->
+            <a href="index.html" ><span id="logout">logout</span></a>
+            <h1>Extending a Helping Hand
+</h1>
+            
+        </div>
+        <div class="intro">
+            <p>Welcome to the heart of Calm Mind Compass – the "Extending a Helping Hand" section. We
+recognize that life's journey can be both beautiful and challenging, and during difficult times,
+finding a supportive community is essential. Here, we offer an empathetic space for individuals
+who are currently experiencing emotional distress and seeking help.
+At Calm Mind Compass, we believe that every person deserves to be heard, understood, and
+supported. Our mission is to provide you with the guidance, resources, and compassionate
+companionship to navigate through life's ups and downs with resilience and hope.
+What are mental health problems?
+People from all walks of life have experienced stress at one point of time in their lives – from
+employees who are overwhelmed with work, young students going to school, family members
+due to financial needs, those impacted by the loss of loved ones, or the people who faced
+difficulties in accessing mental health services due to lack of awareness.
+Experiencing a mental health problem is often upsetting, confusing and frightening – particularly
+at first. If you become unwell, you may feel that it's a sign of weakness, or that you are 'losing
+your mind'. You just want to move away from everything because you feel like you are the sole
+cause of all your problems and are a burden to everyone else.
+These fears are often reinforced by the negative (and often unrealistic) way that people
+experiencing mental health problems are shown on TV, in films and by the media. This may stop
+you from talking about your problems, or seeking help. This, in turn, is likely to increase your
+distress and sense of isolation.
+However, in reality, mental health problems are a common human experience.
+Mental health problems affect around one in four people in any given year. They range from
+common problems, such as depression and anxiety, to rarer problems such as schizophrenia
+and others.
+Some mental health problems cause us more serious distress and problems with our lives, and
+may continue for years. For instance, hearing and seeing things that others can’t see, or
+believing that other people are out to get us, can cause conflicts with other people. As a result,
+we may lose jobs, friends, children, housing and even our liberty and lives.
+We use the phrase 'mental health problems', as many people have told us this feels helpful for
+them. But you might be more familiar with terms such as 'poor emotional health', 'overloaded',
+'burnt out' or 'overwhelmed'. Or you may feel that terms such as 'mental illness' or 'mental health
+issues' describe your experiences better, or are easier to explain to other people in your life.
+Symptoms of Depression:
+Persistent feelings of sadness or emptiness
+Loss of interest or pleasure in activities once enjoyed
+Significant changes in appetite and weight
+Insomnia or excessive sleeping
+Fatigue or loss of energy
+Feelings of worthlessness or excessive guilt
+Difficulty concentrating or making decisions
+Recurrent thoughts of death or suicide</p>
+        </div>
+        <div class="video-container">
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/CQjGqtH-2YI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="img/yoga1.jpeg" alt="Pose 1">
+                <div class="container">
+                    <h4><b>NATRAJASANA</b></h4>
+                    <p>This pose helps blood circulation in arms and legs which further facilities calmness in the mind.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/yoga2.jpeg" alt="Pose 1">
+                <div class="container">
+                    <h4><b>BAKASANA</b></h4>
+                    <p>This pose helps to maintain our body posture by stiffing the shoulders and straightening the backbone.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/yoga4.jpeg" alt="Pose 1">
+                <div class="container">
+                    <h4><b>MAYURASANA & PADMASANA</b></h4>
+                    <p>This pose increases the energy level of the body and stimulates the abdomen,bladder and spine.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/yoga5.jpeg" alt="Pose 1">
+                <div class="container">
+                <h4><b>HASTA BUKHASANA</b></h4>
+                    <p>This pose helps when a person is facing motion sickness and also helps to give relief to diabetes patients.</p>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/yoga6.jpeg" alt="Pose 1">
+                <div class="container">
+                <h4><b>MAYURASANA</b></h4>
+                    <p>Mayurasana focuses on blood circulation in the kidney and also helps in better digestion.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/yoga7.jpeg" alt="Pose 1">
+                <div class="container">
+                <h4><b>VRISHIKASANA</b></h4>
+                    <p>Vrishikasana cleans the intestines and helps in digestion as well.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/yoga8.jpeg" alt="Pose 1">
+                <div class="container">
+                    <h4><b>SIRSASANA</b></h4>
+                    <p>Sirsasana specializes in pumping blood to the brain and helps to regulate the thyroid gland.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/yoga9.jpeg" alt="Pose 1">
+                <div class="container">
+                    <h4><b>ARDHA MATSYENDRASANA</b></h4>
+                    <p>This is a difficult pose but has more benefits. It reduces lower back pain and also relieves from pain in thighs.</p>
+                </div>
+            </div>
+            <!-- Add more cards for other yoga poses here -->
+        </div>
+        
+    </div>
+</body>
+
+</html>

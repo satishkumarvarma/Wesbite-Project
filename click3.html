@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish and Responsive Yoga Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            border-radius: 50%;
+            max-width: 100px;
+            height: auto;
+        }
+
+        .intro {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            flex: 0 0 calc(25% - 20px);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            margin: 10px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .card .container {
+            padding: 10px;
+        }
+
+        .card h4 {
+            margin: 0;
+        }
+
+        #logout{
+            border: 2px solid black;
+            border-radius: 10px;
+            display: inline-block;
+            color: black;
+            padding: 15px;
+            margin-left: 850px;
+            cursor: pointer;
+        }
+
+        #logout:hover{
+            background-color: rgb(154, 168, 168);
+            font-size: larger;
+        }
+
+        @media only screen and (max-width: 800px) {
+            .header h1 {
+                font-size: 24px;
+            }
+            /* .video-container{
+                width:250px;
+            } */
+            .intro p {
+                font-size: 14px;
+            }
+
+            .card {
+                flex: 0 0 calc(33.33% - 20px);
+            }
+             #logout{
+                margin-left:600px;
+            } 
+        }
+        /* @media only screen and (max-width: 800px) {
+            #logout{
+                margin-left:500px;
+            } 
+        }
+        @media only screen and(max-width:414px){
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .intro p {
+                font-size: 12px;
+            }
+
+            .card {
+                flex: 0 0 calc(33.33% - 20px);
+            }
+            #logout{
+                margin-left: 260px;
+            }
+        } */
+
+        @media only screen and (max-width: 378px) {
+    #logout{
+                margin-left: 100px;
+            }
+}
+        @media only screen and (min-width: 800px) {
+    #logout{
+                margin-left: 770px;
+            }
+}
+
+         /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #logout{
+                margin-left: 260px;
+            }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #logout{
+                margin-left: 490px;
+            }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #logout{
+                margin-left: 650px;
+            }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #logout{
+                margin-left: 870px;
+            }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #logout{
+                margin-left: 1000px;
+            }
+}
+
+
+        /* Responsive layout for even smaller screens */
+        @media only screen and (max-width: 600px) {
+            .card {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- <img src="https://media.istockphoto.com/id/1355037936/photo/shot-of-a-young-businessman-looking-stressed-while-working-in-a-modern-office.jpg?s=1024x1024&w=is&k=20&c=keYWImA78TOzpWKgsjdtrqe5Y-XndPPrZAPjMuWbuj8=" alt="alternatetext"> -->
+            <a href="index.html" ><span id="logout">logout</span></a>
+            <h1>Embracing Genetic Mental Health</h1>
+            
+        </div>
+        <div class="intro">
+            <p>Welcome to the "Embracing Genetic Mental Health" section of Calm Mind Compass. Here, we recognize the unique journeys of individuals who have faced mental conditions since birth or due to genetic factors. This space is dedicated to offering insights, resources, and a supportive community tailored to your experiences. Our aim is to provide a comfort space where understanding and empowerment flourish.
+
+We aim to provide self help solutions and a feeling of being included despite their unfortunate mental health conditions
+Together, let's embrace the challenges and triumphs that come with genetic mental health, fostering a sense of unity and hope in your journey towards well-being.
+
+Here are some self-help solutions presented in points for individuals dealing with genetic mental health conditions:
+
+1.Knowledge is Power: Educate yourself about your genetic mental health condition to better understand its nature and effects.
+
+2.Create a Support System: Build a network of friends, family, or support groups to share experiences, advice, and encouragement.
+
+3.Prioritize Self-Care: Establish self-care routines, including exercise, nutrition, and sleep, to enhance your overall well-being.
+
+4.Mindfulness Practice: Engage in mindfulness techniques like deep breathing or meditation to manage stress and promote relaxation.
+
+5.Honest Conversations: Communicate openly with healthcare professionals about your genetic mental health condition and your needs.
+
+6.Set Attainable Goals: Set achievable goals that align with your capabilities and celebrate your progress along the way.
+
+7.Acknowledge Your Strength: Recognize your resilience in managing your condition and the challenges it presents.
+
+8.Professional Guidance: Seek guidance from mental health experts who specialize in genetic conditions for tailored strategies.
+
+9.Reduce Stressors: Identify and minimize stressors in your surroundings to create a more conducive environment for well-being.
+
+10.Positive Mindset: Foster a positive mindset by focusing on your strengths and practicing self-compassion.
+
+Remember, each person's journey is unique, and the solutions should be tailored to your specific needs and circumstances. Consulting with healthcare professionals is crucial for developing a comprehensive and effective approach to managing your genetic mental health condition</p>
+        </div>
+        <div class="video-container">
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/CQjGqtH-2YI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="cards">
+        <div class="card">
+                <img src="img/yoga1.jpeg" alt="Pose 1">
+                <div class="container">
+                    <h4><b>NATRAJASANA</b></h4>
+                    <p>This pose helps blood circulation in arms and legs which further facilities calmness in the mind.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/yoga2.jpeg" alt="Pose 1">
+                <div class="container">
+                    <h4><b>BAKASANA</b></h4>
+                    <p>This pose helps to maintain our body posture by stiffing the shoulders and straightening the backbone.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/yoga4.jpeg" alt="Pose 1">
+                <div class="container">
+                    <h4><b>MAYURASANA & PADMASANA</b></h4>
+                    <p>This pose increases the energy level of the body and stimulates the abdomen,bladder and spine.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/yoga5.jpeg" alt="Pose 1">
+                <div class="container">
+                <h4><b>HASTA BUKHASANA</b></h4>
+                    <p>This pose helps when a person is facing motion sickness and also helps to give relief to diabetes patients.</p>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/yoga6.jpeg" alt="Pose 1">
+                <div class="container">
+                <h4><b>MAYURASANA</b></h4>
+                    <p>Mayurasana focuses on blood circulation in the kidney and also helps in better digestion.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/yoga7.jpeg" alt="Pose 1">
+                <div class="container">
+                <h4><b>VRISHIKASANA</b></h4>
+                    <p>Vrishikasana cleans the intestines and helps in digestion as well.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/yoga8.jpeg" alt="Pose 1">
+                <div class="container">
+                    <h4><b>SIRSASANA</b></h4>
+                    <p>Sirsasana specializes in pumping blood to the brain and helps to regulate the thyroid gland.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/yoga9.jpeg" alt="Pose 1">
+                <div class="container">
+                    <h4><b>ARDHA MATSYENDRASANA</b></h4>
+                    <p>This is a difficult pose but has more benefits. It reduces lower back pain and also relieves from pain in thighs.</p>
+                </div>
+            </div>
+            <!-- Add more cards for other yoga poses here -->
+        </div>
+        
+    </div>
+</body>
+
+</html>
